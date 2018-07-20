@@ -1,0 +1,154 @@
+// Place all the styles related to the Birthday controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1, h2, h2, h4, h5, h6 { font-family: 'Oswald', sans-serif; text-transform: uppercase;}
+p, a, li, div { font-family: 'Source Sans Pro', sans-serif; }
+
+body { 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1 { 
+  margin-left: 20px;
+  margin-bottom: 0;
+  color: #003366;
+}
+
+h2 { color: #003366; }
+
+.divider { 
+  margin: 100px 0;
+  text-align: center;
+  img { width: 130px; }
+}
+
+#gift { 
+  text-align: center; 
+  margin: 100px auto;
+  h2 { color: black; margin-bottom: 0; }
+}
+
+.button { 
+  cursor: pointer;
+  padding: 20px;
+  width: 350px;
+  display: inline-block;
+  background-color: #003366;
+  box-shadow: 3px 3px 3px lightgray;
+  a { text-decoration: none; color: white; font-weight: bold; }
+}
+
+.timeline { 
+  height: 100vh;
+  width: 100%;
+  overflow: scroll; 
+  background-image: url('timeline.png');
+  background-position: center;
+  .factoid {
+    text-align: center;
+    background: white;
+   h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  p { max-width: 250px; display: inline-block; }
+}
+}
+
+
+  .half { 
+    width: 400px; 
+    box-sizing: border-box; 
+    padding: 10px; 
+    display: inline-block;
+    vertical-align: top;
+  }
+  #introduction {
+    width: fit-content;
+    margin: 0 auto;
+    border-left: 10px solid gray;
+    border-right: 10px solid gray;
+    padding: 25px;
+  }
+  .line {
+    height: 10px;
+    width: 800px;
+    background-color: gray;
+    margin: 25px auto;
+  }
+
+  @media only screen and (min-width: 880px) {
+  h1 { 
+    font-size: 150pt; 
+    line-height: 140pt;
+    }
+    .half { width: 400px; }
+ .line {
+    width: 800px;
+  }
+
+  .timeline .factoid h2 { font-size: 50pt; }
+  #gift h2 {font-size: 72pt; }
+}
+
+@media only screen and (min-width: 588px) and (max-width: 879px) {
+  h1 { 
+  font-size: 100pt; 
+  line-height: 90pt;
+  }
+
+  .half { 
+    width: 250px;
+  } 
+   .line {
+    width: 500px;
+  }
+ .timeline .factoid h2 { font-size: 50pt; }
+   #gift h2 {font-size: 60pt; }
+
+
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 587px) {
+  h1 { 
+  font-size: 72pt; 
+  line-height: 65pt;
+  }
+    .half { 
+    width: 100%;
+  } 
+ .line {
+    width: 80%;
+  }
+  #introduction { width: 80% !important; }
+    .timeline .factoid h2 { font-size: 42pt; }
+      #gift h2 {font-size: 40pt; }
+
+
+}
+
+@media only screen and (max-width: 399px) {
+  h1 { 
+  font-size: 50pt; 
+  line-height: 45pt;
+  }
+      .half { 
+    width: 100%;
+  } 
+   .line {
+    width: 80%;
+  }
+  .timeline .factoid h2 { font-size: 36pt; }
+
+  #introduction { width: 80% !important; }
+    #gift h2 {font-size: 38pt; }
+
+}
+
+
+
+
+
+
