@@ -43,8 +43,9 @@ h2 { color: #003366; }
   height: 100vh;
   width: 100%;
   overflow: scroll; 
-  background-image: url('timeline.png');
+  background-image: url('timeline1.png');
   background-position: center;
+  background-size: contain;
   .factoid {
     text-align: center;
     background: white;
